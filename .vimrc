@@ -24,6 +24,7 @@ set smartindent
 set visualbell
 set showmatch
 set laststatus=2
+set cursorcolumn
 
 "----------------------------------------------------------------------------
 " Tab
