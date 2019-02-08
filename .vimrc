@@ -51,3 +51,27 @@ inoremap <C-e> <Esc>$a
 inoremap <C-a> <Esc>^a
 noremap <C-e> <Esc>$a
 noremap <C-a> <Esc>^a
+
+nnoremap <silent><C-t> :NERDTreeToggle<CR>
+
+"----------------------------------------------------------------------------
+" Set up plugin
+"----------------------------------------------------------------------------
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'Shougo/unite.vim' " opening file
+Plug 'Shougo/neomru.vim' " showing recent used file
+Plug 'alvan/vim-closetag' " closing tag
+Plug 'fatih/vim-go' " golang
+Plug 'scrooloose/nerdtree' " opening file tree
+Plug 'airblade/vim-gitgutter' "vim with git
+Plug 'ctrlpvim/ctrlp.vim' "search with file name
+
+call plug#end()
+
+"----------------------------------------------------------------------------
+" Config for plugin
+"----------------------------------------------------------------------------
+
+let NERDTreeShowHidden = 1
