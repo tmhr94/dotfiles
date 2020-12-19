@@ -18,3 +18,4 @@ DOTFILES=`pwd`
 ln -sf $DOTFILES/.vimrc $HOME/.vimrc
 ln -sf $DOTFILES/.gitconfig $HOME/.gitconfig
 ln -sf $DOTFILES/.bash_profile $HOME/.bash_profile
+ln -sf $DOTFILES/.gitignore_global $HOME/.gitignore_global
