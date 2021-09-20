@@ -1,0 +1,6 @@
+*~
+.DS_Store
+.byebug_history
+.vscode/*
+**/.vscode/*
+memo.md
