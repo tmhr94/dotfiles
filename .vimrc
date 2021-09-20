@@ -8,6 +8,7 @@ set noswapfile
 set autoread
 set hidden
 set showcmd
+set textwidth=0
 
 set clipboard=unnamed,autoselect
 set backspace=indent,eol,start
@@ -48,10 +49,10 @@ set hlsearch
 
 inoremap <C-c> <Esc>
 inoremap <C-e> <Esc>$a
-inoremap <C-j> <down>
-inoremap <C-k> <up>
-inoremap <C-h> <left>
-inoremap <C-l> <right>
+inoremap <S-j> <down>
+inoremap <S-k> <up>
+inoremap <S-h> <left>
+inoremap <S-l> <right>
 noremap <C-e> <Esc>$a
 noremap <S-h> 0
 noremap <S-l> $
