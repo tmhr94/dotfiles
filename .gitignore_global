@@ -2,5 +2,6 @@
 .DS_Store
 .byebug_history
 .vscode/*
+vscode/*
 **/.vscode/*
 memo.md
