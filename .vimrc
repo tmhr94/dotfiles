@@ -53,6 +53,7 @@ noremap <C-e> <Esc>$a
 noremap <C-a> <Esc>^a
 
 nnoremap <silent><C-t> :NERDTreeToggle<CR>
+noremap f <Plug>(easymotion-bd-w)
 
 "----------------------------------------------------------------------------
 " Set up plugin
@@ -67,6 +68,7 @@ Plug 'fatih/vim-go' " golang
 Plug 'scrooloose/nerdtree' " opening file tree
 Plug 'airblade/vim-gitgutter' "vim with git
 Plug 'ctrlpvim/ctrlp.vim' "search with file name
+Plug 'easymotion/vim-easymotion'
 
 call plug#end()
 
