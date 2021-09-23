@@ -49,15 +49,9 @@ set hlsearch
 
 inoremap <C-c> <Esc>
 inoremap <C-e> <Esc>$a
-inoremap <S-j> <down>
-inoremap <S-k> <up>
-inoremap <S-h> <left>
-inoremap <S-l> <right>
 noremap <C-e> <Esc>$a
 noremap <S-h> 0
 noremap <S-l> $
-noremap <C-a> A 
-noremap <C-i> I 
 
 nnoremap <silent><C-t> :NERDTreeToggle<CR>
 noremap f <Plug>(easymotion-bd-w)
