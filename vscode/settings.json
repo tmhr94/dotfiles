@@ -1,0 +1,34 @@
+{
+    "editor.tabSize": 2,
+    "ruby.codeCompletion": "rcodetools",
+    "files.insertFinalNewline": true,
+    "explorer.confirmDragAndDrop": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "ruby.intellisense": "rubyLocate",
+    "explorer.confirmDelete": false,
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.largeFileOptimizations": false,
+    "window.zoomLevel": 1,
+    "vim.easymotion": true,
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "~/.vimrc",
+    "editor.renderWhitespace": "trailing",
+    "diffEditor.ignoreTrimWhitespace": false,
+    // When using M1, have to change the defaultIM to com.apple.keylayout.ABC
+    "vim.autoSwitchInputMethod.defaultIM": "com.apple.inputmethod.Kotoeri.Roman",
+    "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/bin/im-select",
+    "vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/bin/im-select {im}",
+    "vim.autoSwitchInputMethod.enable": true
+}

@@ -1,1 +1,3 @@
 .gitconfig
+!vscode/settings.json
+!vscode/keybindings.json
