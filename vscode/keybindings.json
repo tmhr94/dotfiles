@@ -15,5 +15,10 @@
   {
     "key": "alt+cmd+left",
     "command": "-workbench.action.previousEditor"
+  },
+  {
+    "key": "cmd+alt+v", 
+    "command": "markdown-preview-enhanced.openPreviewToTheSide",
+    "when": "editorLangId == markdown"
   }
 ]
