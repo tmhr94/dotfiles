@@ -7,3 +7,8 @@ install:
 	ln -sf ${CURRENT_DIR}/.gitignore_global $$HOME/.gitignore_global
 	ln -sf ${CURRENT_DIR}/settings.json ${VSCODE_SETTING_DIR}/settings.json
 	ln -sf ${CURRENT_DIR}/keybindings.json ${VSCODE_SETTING_DIR}/keybindings.json
+
+commit:
+	git add .
+	git commit -m 'updated'
+	git push origin master
