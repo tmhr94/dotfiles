@@ -39,3 +39,5 @@ PATH="$HOME/.nodenv/bin:$PATH"
 if which nodenv > /dev/null; then
   eval "$(nodenv init -)"
 fi
+# To use firebase-tools installed in npm of nodenv node
+export PATH=$HOME/.nodenv/versions/16.0.0/bin:$PATH
