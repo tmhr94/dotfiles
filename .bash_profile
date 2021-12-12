@@ -34,10 +34,8 @@ export PATH=$GOPATH/bin:$PATH
 # homebrew for m1
 export PATH=/opt/homebrew/bin:$PATH
 
-# nodebrew
-export PATH=$HOME/.nodebrew/current/bin:$PATH
-
-# To use Homebrew's directories rather than ~/.nodebrew
-export NODEBREW_ROOT=/opt/homebrew/var/nodebrew
-export PATH=/opt/homebrew/var/nodebrew/current/bin:$PATH
-
+# nodenv
+PATH="$HOME/.nodenv/bin:$PATH"
+if which nodenv > /dev/null; then
+  eval "$(nodenv init -)"
+fi
