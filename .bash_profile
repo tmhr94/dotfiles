@@ -31,5 +31,8 @@ eval "$(rbenv init -)"
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$PATH
 
+# homebrew for m1
+export PATH=/opt/homebrew/bin:$PATH
+
 # nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
