@@ -1,4 +1,3 @@
-source /usr/local/etc/bash_completion.d/git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=true
 #PS1='[\u@\h: $(__git_ps1 "(%s)")\W]\$ '
 PS1='\[\e[34m\]\w \[\e[37m\]\$\[\e[0m\] '
@@ -24,8 +23,6 @@ alias vs='code .' # to start VSCode
 alias awsl='aws --endpoint-url=http://localhost:4566/'
 
 export BASH_SILENCE_DEPRECATION_WARNING=1
-
-eval "$(rbenv init -)"
 
 # For golang
 export GOPATH=$HOME/go
