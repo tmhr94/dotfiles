@@ -19,6 +19,8 @@ alias gri='git rebase -i'
 alias grc='git rebase --continue'
 alias gca='git commit --amend'
 alias mc='make commit'
+alias ds='docker ps'
+alias cg='cd ~/Documents/git'
 alias vs='code .' # to start VSCode
 alias awsl='aws --endpoint-url=http://localhost:4566/'
 
