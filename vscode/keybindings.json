@@ -25,5 +25,25 @@
     "key": "cmd+k v",
     "command": "-markdown.showPreviewToSide",
     "when": "!notebookEditorFocused && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+c",
+    "command": "copyRelativeFilePath",
+    "when": "!editorFocus"
+  },
+  {
+    "key": "shift+alt+cmd+c",
+    "command": "-copyRelativeFilePath",
+    "when": "!editorFocus"
+  },
+  {
+    "key": "ctrl+cmd+e",
+    "command": "workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "shift+cmd+e",
+    "command": "-workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
   }
 ]

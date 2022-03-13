@@ -40,3 +40,8 @@ if which nodenv > /dev/null; then
 fi
 # To use firebase-tools installed in npm of nodenv node
 export PATH=$HOME/.nodenv/versions/16.0.0/bin:$PATH
+
+# rbenv
+[[ -d ~/.rbenv  ]] && \
+  export PATH=${HOME}/.rbenv/bin:${PATH} && \
+  eval "$(rbenv init -)"
