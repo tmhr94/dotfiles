@@ -18,11 +18,16 @@ alias gs='git stash save'
 alias gri='git rebase -i'
 alias grc='git rebase --continue'
 alias gca='git commit --amend'
+alias gcp='git cherry-pick'
 alias mc='make commit'
-alias ds='docker ps'
-alias cg='cd ~/Documents/git'
 alias vs='code .' # to start VSCode
+alias dps='docker ps'
+alias ds='docker stop'
+alias dcs='docker-compose stop'
+alias dcu='docker-compose up'
+alias cg='cd ~/Documents/git'
 alias awsl='aws --endpoint-url=http://localhost:4566/'
+alias s='bundle exec rspec'
 
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
