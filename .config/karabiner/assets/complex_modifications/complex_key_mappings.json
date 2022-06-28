@@ -67,6 +67,22 @@
 							"key_code": "right_arrow"
 						}
 					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "i",
+						"modifiers": {
+							"mandatory": [
+								"left_control"
+							]
+						}
+					},
+					"to": [
+						{
+							"key_code": "delete_or_backspace"
+						}
+					]
 				}
 			]
 		}
