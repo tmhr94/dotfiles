@@ -20,7 +20,7 @@
     },
     "security.workspace.trust.untrustedFiles": "open",
     "editor.largeFileOptimizations": false,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 2,
     "vim.easymotion": true,
     "vim.vimrc.enable": true,
     "vim.vimrc.path": "~/.vimrc",
