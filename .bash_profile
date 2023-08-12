@@ -10,6 +10,7 @@ alias grep='grep --color'
 alias df='df -h'
 alias rl='exec $SHELL -l'
 alias gc='git commit'
+alias gl='git log -p'
 alias gp='git push'
 alias gb='git branch'
 alias gm='git merge'
@@ -38,13 +39,15 @@ export PATH=$GOPATH/bin:$PATH
 # homebrew for m1
 export PATH=/opt/homebrew/bin:$PATH
 
+export PATH=/Users/chiyuu/Documents/dev/flutter/bin:$PATH
+
 # nodenv
 PATH="$HOME/.nodenv/bin:$PATH"
 if which nodenv > /dev/null; then
   eval "$(nodenv init -)"
 fi
 # To use firebase-tools installed in npm of nodenv node
-export PATH=$HOME/.nodenv/versions/16.0.0/bin:$PATH
+export PATH=$HOME/.nodenv/versions/16.19.1/bin:$PATH
 
 # rbenv
 [[ -d ~/.rbenv  ]] && \
