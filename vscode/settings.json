@@ -25,11 +25,10 @@
     "vim.vimrc.path": "~/.vimrc",
     "editor.renderWhitespace": "trailing",
     "diffEditor.ignoreTrimWhitespace": false,
-    // When using M1, have to change the defaultIM to com.apple.keylayout.ABC
-    "vim.autoSwitchInputMethod.defaultIM": "com.apple.inputmethod.Kotoeri.Roman",
+    "vim.autoSwitchInputMethod.defaultIM": "com.apple.inputmethod.Kotoeri.RomajiTyping.Roman",
+    "vim.autoSwitchInputMethod.obtainIMCmd": "/opt/homebrew/bin/im-select",
+    "vim.autoSwitchInputMethod.switchIMCmd": "/opt/homebrew/bin/im-select {im}",
     "vim.autoSwitchInputMethod.enable": true,
-    "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/bin/im-select",
-    "vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/bin/im-select {im}",
     "vim.foldfix": true
     "workbench.colorTheme": "GitHub Dark Dimmed",
     "ruby.rubocop.executePath": "~/.rbenv/shims/",
