@@ -20,7 +20,6 @@
     },
     "security.workspace.trust.untrustedFiles": "open",
     "editor.largeFileOptimizations": false,
-    "window.zoomLevel": 2,
     "vim.easymotion": true,
     "vim.vimrc.enable": true,
     "vim.vimrc.path": "~/.vimrc",
@@ -28,8 +27,46 @@
     "diffEditor.ignoreTrimWhitespace": false,
     // When using M1, have to change the defaultIM to com.apple.keylayout.ABC
     "vim.autoSwitchInputMethod.defaultIM": "com.apple.inputmethod.Kotoeri.Roman",
+    "vim.autoSwitchInputMethod.enable": true,
     "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/bin/im-select",
     "vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/bin/im-select {im}",
-    "vim.autoSwitchInputMethod.enable": true,
     "vim.foldfix": true
+    "workbench.colorTheme": "GitHub Dark Dimmed",
+    "ruby.rubocop.executePath": "~/.rbenv/shims/",
+    "search.exclude": {
+        "public/assets/*": true,
+        "public/assets/**/*": true,
+        "vendor/": true,
+        "vendor/bundle/**/*": true
+    },
+    "solargraph.autoformat": true,
+    "solargraph.bundlerPath": "~/.rbenv/shims/bundle",
+    "solargraph.diagnostics": true,
+    "solargraph.formatting": true,
+    "editor.minimap.enabled": false,
+    "extensions.ignoreRecommendations": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[ruby]": {
+        "editor.defaultFormatter": "misogi.ruby-rubocop"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "files.associations": {
+        "*.vue": "vue"
+    },
+    "redhat.telemetry.enabled": false,
+    "rdbg.rubyVersionManager": "rbenv",
+    "vue.autoInsert.dotValue": true,
+    "vue.codeActions.savingTimeLimit": 10000,
+    "vue.inlayHints.missingProps": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false
+    },
+    "window.zoomLevel": 2,
 }
