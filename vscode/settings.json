@@ -16,7 +16,7 @@
         "editor.suggest.snippetsPreventQuickSuggestions": false,
         "editor.suggestSelection": "first",
         "editor.tabCompletion": "onlySnippets",
-        "editor.wordBasedSuggestions": false
+        "editor.wordBasedSuggestions": "off"
     },
     "security.workspace.trust.untrustedFiles": "open",
     "editor.largeFileOptimizations": false,
@@ -25,12 +25,11 @@
     "vim.vimrc.path": "~/.vimrc",
     "editor.renderWhitespace": "trailing",
     "diffEditor.ignoreTrimWhitespace": false,
+    "vim.autoSwitchInputMethod.enable": true,
     "vim.autoSwitchInputMethod.defaultIM": "com.apple.inputmethod.Kotoeri.RomajiTyping.Roman",
     "vim.autoSwitchInputMethod.obtainIMCmd": "/opt/homebrew/bin/im-select",
     "vim.autoSwitchInputMethod.switchIMCmd": "/opt/homebrew/bin/im-select {im}",
-    "vim.autoSwitchInputMethod.enable": true,
-    "vim.foldfix": true
-    "workbench.colorTheme": "GitHub Dark Dimmed",
+    "vim.foldfix": true,
     "ruby.rubocop.executePath": "~/.rbenv/shims/",
     "search.exclude": {
         "public/assets/*": true,
@@ -48,7 +47,18 @@
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "[ruby]": {
-        "editor.defaultFormatter": "misogi.ruby-rubocop"
+        "editor.defaultFormatter": "Shopify.ruby-lsp",
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "files.trimTrailingWhitespace": true,
+        "files.insertFinalNewline": true,
+        "files.trimFinalNewlines": true,
+        "editor.rulers": [
+            120
+        ],
+        "editor.semanticHighlighting.enabled": true
     },
     "[javascript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
@@ -64,8 +74,11 @@
     "github.copilot.enable": {
         "*": true,
         "plaintext": false,
-        "markdown": true,
+        "markdown": false,
         "scminput": false
     },
     "window.zoomLevel": 2,
+    "workbench.colorTheme": "Default Dark+",
+    "rubyLsp.customRubyCommand": "~/.rbenv/versions/3.1.2/bin/ruby",
+    "workbench.activityBar.location": "top",
 }
