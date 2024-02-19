@@ -42,12 +42,8 @@ export PATH=/opt/homebrew/bin:$PATH
 export PATH=/Users/chiyuu/Documents/dev/flutter/bin:$PATH
 
 # nodenv
-PATH="$HOME/.nodenv/bin:$PATH"
-if which nodenv > /dev/null; then
-  eval "$(nodenv init -)"
-fi
-# To use firebase-tools installed in npm of nodenv node
-export PATH=$HOME/.nodenv/versions/16.19.1/bin:$PATH
+export PATH="$HOME/.nodenv/bin:$PATH"
+eval "$(nodenv init -)"
 
 # rbenv
 [[ -d ~/.rbenv  ]] && \
