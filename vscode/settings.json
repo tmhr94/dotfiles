@@ -23,6 +23,7 @@
     "vim.easymotion": true,
     "vim.vimrc.enable": true,
     "vim.vimrc.path": "~/.vimrc",
+    "vim.autoindent": false,
     "editor.renderWhitespace": "trailing",
     "diffEditor.ignoreTrimWhitespace": false,
     "vim.autoSwitchInputMethod.enable": true,
@@ -77,8 +78,12 @@
         "markdown": false,
         "scminput": false
     },
+    "editor.quickSuggestions": {
+        "other": "off"
+    },
+    "editor.suggestOnTriggerCharacters": false,
     "window.zoomLevel": 2,
-    "workbench.colorTheme": "Default Dark+",
+    "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
     "rubyLsp.customRubyCommand": "~/.rbenv/versions/3.1.2/bin/ruby",
     "workbench.activityBar.location": "top",
     "markmap.defaultOptions": "{ \"maxWidth\": 200, \"duration\": 0 }",
