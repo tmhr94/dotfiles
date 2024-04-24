@@ -244,5 +244,10 @@
     "key": "cmd+k",
     "command": "-workbench.action.terminal.clear",
     "when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled || accessibilityModeEnabled && accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "markmap-vscode.open",
+    "when": "!notebookEditorFocused && editorLangId == 'markdown'"
   }
 ]
