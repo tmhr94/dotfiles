@@ -274,5 +274,13 @@
     "key": "shift+cmd+v",
     "command": "-markdown.extension.closePreview",
     "when": "activeWebviewPanelId == 'markdown.preview'"
+  },
+  {
+    "key": "ctrl+cmd+o",
+    "command": "workbench.action.showAllSymbols"
+  },
+  {
+    "key": "cmd+t",
+    "command": "-workbench.action.showAllSymbols"
   }
 ]
