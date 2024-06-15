@@ -78,7 +78,7 @@
     "rubyLsp.customRubyCommand": "custom",
     "workbench.activityBar.location": "top",
     "ruby.rubocop.executePath": "~/.rbenv/shims/",
-    "ruby.rubocop.configFilePath": "~/Documents/git/lifood-admin/.rubocop.yml",
+    // "ruby.rubocop.configFilePath": "~/Documents/git/dotfiles/.rubocop.yml",
     "ruby.rubocop.onSave": false,
     "editor.acceptSuggestionOnEnter": "off",
     "emmet.useInlineCompletions": true,
