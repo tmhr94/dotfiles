@@ -69,16 +69,14 @@
     "vue.autoInsert.dotValue": true,
     "vue.inlayHints.missingProps": true,
     "github.copilot.enable": {
-        "*": true,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false
-    },
+      "*": true,
+      "plaintext": false,
+      "markdown": true,
+      "scminput": false
+  },
     "window.zoomLevel": 2,
-    "rubyLsp.customRubyCommand": "custom",
-    "workbench.activityBar.location": "top",
-    "ruby.rubocop.executePath": "~/.rbenv/shims/",
-    // "ruby.rubocop.configFilePath": "~/Documents/git/dotfiles/.rubocop.yml",
+  "rubyLsp.customRubyCommand": "custom",
+  "ruby.rubocop.executePath": "~/.rbenv/shims/",
     "ruby.rubocop.onSave": false,
     "editor.acceptSuggestionOnEnter": "off",
     "emmet.useInlineCompletions": true,
@@ -88,12 +86,35 @@
     "editor.inlineSuggest.suppressSuggestions": true,
     "editor.formatOnType": true,
     "rubyLsp.formatter": "rubocop",
-    "editor.formatOnSaveMode": "modifications",
+    "editor.formatOnSaveMode": "file",
     "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
     "vim.autoindent": false,
     "github.copilot.chat.localeOverride": "ja",
     "editor.suggestOnTriggerCharacters": false,
     "[scss]": {
         "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
-    },
-}
+  },
+  "workbench.activityBar.location": "top",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "todo-tree.general.tags": [
+      "BUG",
+      "HACK",
+      "FIXME",
+      "TODO",
+      "XXX",
+      "[ ]",
+      "[x]",
+      "REVIEW",
+      "OPTIMIZE",
+      "CHANGED",
+      "NOTE",
+      "WARNING"
+  ],
+  "workbench.editor.pinnedTabSizing": "shrink",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "vim.easymotion": true,
+  "markmap.defaultOptions": "{ \"maxWidth\": 200, \"duration\": 0 }",
+  "workbench.tree.indent": 12,
+  "window.closeWhenEmpty": true,
+  }
+  
