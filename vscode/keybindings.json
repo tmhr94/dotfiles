@@ -171,7 +171,7 @@
     "when": "suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
   },
   {
-    "key": "ctrl+cmd+p",
+    "key": "ctrl+y",
     "command": "workbench.action.gotoSymbol",
     "when": "!accessibilityHelpIsShown && !accessibleViewIsShown"
   },
@@ -179,16 +179,6 @@
     "key": "shift+cmd+o",
     "command": "-workbench.action.gotoSymbol",
     "when": "!accessibilityHelpIsShown && !accessibleViewIsShown"
-  },
-  {
-    "key": "ctrl+cmd+p",
-    "command": "editor.action.accessibleViewGoToSymbol",
-    "when": "accessibilityHelpIsShown && accessibleViewGoToSymbolSupported || accessibleViewGoToSymbolSupported && accessibleViewIsShown"
-  },
-  {
-    "key": "shift+cmd+o",
-    "command": "-editor.action.accessibleViewGoToSymbol",
-    "when": "accessibilityHelpIsShown && accessibleViewGoToSymbolSupported || accessibleViewGoToSymbolSupported && accessibleViewIsShown"
   },
   {
     "key": "cmd+l",
@@ -276,7 +266,17 @@
     "when": "activeWebviewPanelId == 'markdown.preview'"
   },
   {
-    "key": "ctrl+cmd+o",
+    "key": "l",
+    "command": "list.toggleExpand",
+    "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+  },
+  {
+    "key": "space",
+    "command": "-list.toggleExpand",
+    "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+  },
+  {
+    "key": "cmd+t",
     "command": "workbench.action.showAllSymbols"
   },
   {
