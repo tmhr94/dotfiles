@@ -268,12 +268,12 @@
   {
     "key": "l",
     "command": "list.toggleExpand",
-    "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+    "when": "breadcrumbsActive"
   },
   {
     "key": "space",
     "command": "-list.toggleExpand",
-    "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+    "when": "breadcrumbsActive"
   },
   {
     "key": "cmd+t",
@@ -282,5 +282,9 @@
   {
     "key": "cmd+t",
     "command": "-workbench.action.showAllSymbols"
+  },
+  {
+    "key": "ctrl+cmd+[",
+    "command": "workbench.files.action.collapseExplorerFolders"
   }
 ]

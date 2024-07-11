@@ -35,15 +35,22 @@ export LS_COLORS='di=01;34:ln=01;35:so=01;32:ex=01;31:bd=46;34:cd=43;34:su=41;30
 
 ## homebrew
 export PATH=/opt/homebrew/bin:$PATH
+
 ## golang
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$PATH
+
 ## flutter
 export PATH=$HOME/Documents/dev/flutter/bin:$PATH
+
 ## rbenv
 [[ -d ~/.rbenv  ]] && \
   export PATH=${HOME}/.rbenv/bin:${PATH} && \
   eval "$(rbenv init -)"
+
+# nodenv
+export PATH="$HOME/.nodenv/bin:$PATH"
+eval "$(nodenv init -)"
 
 # -----------------------------
 # options
@@ -86,7 +93,7 @@ alias history='history -i'
 
 ## git
 alias g='git'
-alias ga='git add'
+alias ga='git add .'
 alias gb='git branch'
 alias gc='git commit'
 alias gcp='git cherry-pick'
