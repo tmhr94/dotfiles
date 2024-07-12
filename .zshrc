@@ -85,7 +85,7 @@ alias vi='vim'
 alias grep='grep --color'
 alias df='df -h'
 alias rl='exec $SHELL -l'
-alias vs='code .' # to start VSCode
+alias vs='code .'
 alias dps='docker ps'
 alias cg='cd ~/Documents/git'
 alias awsl='aws --endpoint-url=http://localhost:4566/'
