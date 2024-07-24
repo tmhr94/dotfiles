@@ -69,11 +69,11 @@
     "vue.autoInsert.dotValue": true,
     "vue.inlayHints.missingProps": true,
     "github.copilot.enable": {
-      "*": true,
-      "plaintext": false,
-      "markdown": true,
-      "scminput": false
-  },
+        "*": true,
+        "plaintext": false,
+        "markdown": "false",
+        "scminput": false
+    },
     "window.zoomLevel": 2,
   "rubyLsp.customRubyCommand": "custom",
   "ruby.rubocop.executePath": "~/.rbenv/shims/",
@@ -120,5 +120,12 @@
 "terminal.integrated.smoothScrolling": true,
 "viml.highVimHelpIndentStylePriority": false,
 "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.ABC",
+"[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+},
+"files.trimTrailingWhitespace": true,
+"files.trimFinalNewlines": true,
+"trailing-spaces.trimOnSave": true,
+"terminal.integrated.suggest.quickSuggestions": false,
+"editor.suggest.selectionMode": "never",
   }
-  
