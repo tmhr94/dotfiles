@@ -286,5 +286,15 @@
   {
     "key": "ctrl+cmd+[",
     "command": "workbench.files.action.collapseExplorerFolders"
+  },
+  {
+    "key": "cmd+y",
+    "command": "workbench.debug.action.toggleRepl",
+    "when": "workbench.panel.repl.view.active"
+  },
+  {
+    "key": "shift+cmd+y",
+    "command": "-workbench.debug.action.toggleRepl",
+    "when": "workbench.panel.repl.view.active"
   }
 ]
