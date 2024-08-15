@@ -134,6 +134,8 @@
     "php.debug.executablePath": "",
     "files.watcherExclude": {
         "**/logs/*/**": true,
-        "**/vendor/*/**": true
+        "**/vendor/*/**": true,
+        "**/node_modules/*/**": true,
+        "**/tmp/*/**": true,
     },
 }
