@@ -125,7 +125,6 @@
     },
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
-    "trailing-spaces.trimOnSave": true,
     "terminal.integrated.suggest.quickSuggestions": false,
     "editor.suggest.selectionMode": "never",
     "hediet.vscode-drawio.resizeImages": null,
@@ -138,4 +137,9 @@
         "**/node_modules/*/**": true,
         "**/tmp/*/**": true,
     },
+    "files.refactoring.autoSave": false,
+    "files.trimTrailingWhitespaceInRegexAndStrings": false,
+    "testing.saveBeforeTest": false,
+    "intelephense.diagnostics.run": "onSave",
+    "makefile.saveBeforeBuildOrConfigure": false,
 }
