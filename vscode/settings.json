@@ -110,7 +110,6 @@
     ],
     "workbench.editor.pinnedTabSizing": "shrink",
     "terminal.integrated.defaultProfile.osx": "zsh",
-    "vim.easymotion": true,
     "markmap.defaultOptions": "{ \"maxWidth\": 200, \"duration\": 0 }",
     "workbench.tree.indent": 12,
     "window.closeWhenEmpty": true,
@@ -142,4 +141,10 @@
     "testing.saveBeforeTest": false,
     "intelephense.diagnostics.run": "onSave",
     "makefile.saveBeforeBuildOrConfigure": false,
+    "vim.overrideCopy": false,
+    "vim.surround": false,
+    "vim.easymotionDimBackground": false,
+    "vim.incsearch": false,
+    "vim.mouseSelectionGoesIntoVisualMode": false,
+    "vim.wrapscan": false,
 }
