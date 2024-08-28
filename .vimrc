@@ -60,21 +60,21 @@ noremap f <Plug>(easymotion-bd-w)
 " Set up plugin
 "----------------------------------------------------------------------------
 
-call plug#begin('~/.vim/plugged')
-
-Plug 'Shougo/unite.vim' " opening file
-Plug 'Shougo/neomru.vim' " showing recent used file
-Plug 'alvan/vim-closetag' " closing tag
-Plug 'fatih/vim-go' " golang
-Plug 'scrooloose/nerdtree' " opening file tree
-Plug 'airblade/vim-gitgutter' "vim with git
-Plug 'ctrlpvim/ctrlp.vim' "search with file name
-Plug 'easymotion/vim-easymotion'
-
-call plug#end()
+" call plug#begin('~/.vim/plugged')
+"
+" Plug 'Shougo/unite.vim' " opening file
+" Plug 'Shougo/neomru.vim' " showing recent used file
+" Plug 'alvan/vim-closetag' " closing tag
+" Plug 'fatih/vim-go' " golang
+" Plug 'scrooloose/nerdtree' " opening file tree
+" Plug 'airblade/vim-gitgutter' "vim with git
+" Plug 'ctrlpvim/ctrlp.vim' "search with file name
+" Plug 'easymotion/vim-easymotion'
+"
+" call plug#end()
 
 "----------------------------------------------------------------------------
 " Config for plugin
 "----------------------------------------------------------------------------
 
-let NERDTreeShowHidden = 1
+" let NERDTreeShowHidden = 1
