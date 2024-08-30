@@ -2,7 +2,7 @@ CURRENT_DIR := $(shell pwd)
 VSCODE_SETTING_DIR := ~/Library/Application\ Support/Code/User/
 HOME_DIR := $(HOME)
 
-FILES_TO_LINK := .vimrc .zshrc .gitignore_global
+FILES_TO_LINK := .vimrc .zshrc .gitignore_global .zsh/.git-prompt.sh
 VSCODE_FILES := settings.json keybindings.json
 
 .PHONY: link unlink commit
