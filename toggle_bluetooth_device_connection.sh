@@ -19,7 +19,7 @@ toggle_bluetooth_device_connection() {
   local device_name="$2"
 
   if ! command_exists "$BLUEUTIL"; then
-    echo "Error: blueutil command not found at $BLUEUTIL"
+    echo "Error: blueutil command not found"
     exit 1
   fi
 
