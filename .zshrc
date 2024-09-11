@@ -90,6 +90,7 @@ alias dps='docker ps'
 alias cg='cd ~/Documents/git'
 alias awsl='aws --endpoint-url=http://localhost:4566/'
 alias history='history -i'
+alias tb="~/toggle_bluetooth_device_connection.sh"
 
 ## git
 alias g='git'
