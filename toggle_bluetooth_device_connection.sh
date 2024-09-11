@@ -13,7 +13,6 @@ command_exists() {
   command -v "$1" >/dev/null 2>&1
 }
 
-# Function to pair or unpair a device based on its connection status
 toggle_bluetooth_device_connection() {
   local device_id="$1"
   local device_name="$2"
