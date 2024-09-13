@@ -35,7 +35,6 @@
         "vendor/": true,
         "vendor/bundle/**/*": true
     },
-    "solargraph.autoformat": true,
     "solargraph.bundlerPath": "~/.rbenv/shims/bundle",
     "solargraph.diagnostics": true,
     "solargraph.formatting": true,
@@ -84,7 +83,6 @@
         "other": "off"
     },
     "editor.inlineSuggest.suppressSuggestions": true,
-    "editor.formatOnType": true,
     "rubyLsp.formatter": "rubocop",
     "editor.formatOnSaveMode": "file",
     "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
