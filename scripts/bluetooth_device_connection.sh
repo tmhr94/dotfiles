@@ -27,10 +27,14 @@ manage_bluetooth_device() {
 
   case "$action" in
     pair)
-      echo "Pairing and connecting $device_name..."
-      "$BLUEUTIL" --pair "$device_id"
-      sleep 1
-      "$BLUEUTIL" --connect "$device_id"
+      if [ "$("$BLUEUTIL" --is-connected "$device_id")" = "1" ]; then
+        echo "$device_name is already connected. Skipping pairing."
+      else
+        echo "Pairing and connecting $device_name..."
+        "$BLUEUTIL" --pair "$device_id"
+        sleep 1
+        "$BLUEUTIL" --connect "$device_id"
+      fi
       ;;
     unpair)
       echo "Unpairing $device_name..."
