@@ -13,6 +13,22 @@ command_exists() {
   command -v "$1" >/dev/null 2>&1
 }
 
+is_device_connected() {
+  [ "$("$BLUEUTIL" --is-connected "$1")" = "1" ]
+}
+
+pair_and_connect_device() {
+  local device_id="$1"
+  local device_name="$2"
+
+  if is_device_connected "$device_id"; then
+    echo "$device_name is already connected. Skipping pairing."
+  else
+    echo "Pairing and connecting $device_name..."
+    "$BLUEUTIL" --pair "$device_id" && sleep 1 && "$BLUEUTIL" --connect "$device_id"
+  fi
+}
+
 manage_bluetooth_device() {
   local action="$1"
   local device_id="$2"
@@ -27,14 +43,7 @@ manage_bluetooth_device() {
 
   case "$action" in
     pair)
-      if [ "$("$BLUEUTIL" --is-connected "$device_id")" = "1" ]; then
-        echo "$device_name is already connected. Skipping pairing."
-      else
-        echo "Pairing and connecting $device_name..."
-        "$BLUEUTIL" --pair "$device_id"
-        sleep 1
-        "$BLUEUTIL" --connect "$device_id"
-      fi
+      pair_and_connect_device "$device_id" "$device_name"
       ;;
     unpair)
       echo "Unpairing $device_name..."
@@ -49,22 +58,31 @@ manage_bluetooth_device() {
   echo "Finished processing $device_name"
 }
 
-if [ $# -ne 1 ]; then
-  echo "Usage: $0 [pair|unpair]"
-  exit 1
-fi
+main() {
+  if ! command_exists "$BLUEUTIL"; then
+    echo "Error: blueutil command not found"
+    exit 1
+  fi
 
-# Get the action from command line argument
-ACTION="$1"
+  if [ $# -ne 1 ]; then
+    echo "Usage: $0 [pair|unpair]"
+    exit 1
+  fi
 
-typeset -A devices
-devices=(
-  "$MK_ID" "Magic Keyboard"
-  "$MT_ID" "Magic Trackpad"
-)
+  # Get the action from command line argument
+  local ACTION="$1"
 
-for device_id device_name in "${(@kv)devices}"; do
-  manage_bluetooth_device "$ACTION" "$device_id" "$device_name"
-done
+  typeset -A devices
+  devices=(
+    "$MK_ID" "Magic Keyboard"
+    "$MT_ID" "Magic Trackpad"
+  )
 
-echo "All devices processed."
+  for device_id device_name in "${(@kv)devices}"; do
+    manage_bluetooth_device "$ACTION" "$device_id" "$device_name"
+  done
+
+  echo "All devices processed."
+}
+
+main "$@"
