@@ -33,7 +33,8 @@
         "public/assets/*": true,
         "public/assets/**/*": true,
         "vendor/": true,
-        "vendor/bundle/**/*": true
+        "vendor/bundle/**/*": true,
+        "node_modules/": true,
     },
     "solargraph.bundlerPath": "~/.rbenv/shims/bundle",
     "solargraph.diagnostics": true,

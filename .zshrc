@@ -90,8 +90,8 @@ alias dps='docker ps'
 alias cg='cd ~/Documents/git'
 alias awsl='aws --endpoint-url=http://localhost:4566/'
 alias history='history -i'
-alias dp="cg && cd dotfiles/scripts && ./bluetooth_device_connection.sh pair"
-alias dup="cg && cd dotfiles/scripts && ./bluetooth_device_connection.sh unpair"
+alias dp='(cg && cd dotfiles/scripts && ./bluetooth_device_connection.sh pair && cd - > /dev/null)'
+alias dup='(cg && cd dotfiles/scripts && ./bluetooth_device_connection.sh unpair && cd - > /dev/null)'
 
 ## git
 alias g='git'
