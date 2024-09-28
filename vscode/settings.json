@@ -85,7 +85,7 @@
     },
     "editor.inlineSuggest.suppressSuggestions": true,
     "rubyLsp.formatter": "rubocop",
-    "editor.formatOnSaveMode": "file",
+    "editor.formatOnSaveMode": "modificationsIfAvailable",
     "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
     "vim.autoindent": false,
     "github.copilot.chat.localeOverride": "ja",
