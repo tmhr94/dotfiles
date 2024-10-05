@@ -10,7 +10,7 @@ set hidden
 set showcmd
 set textwidth=0
 
-set clipboard=unnamed,autoselect
+" set clipboard=unnamed,autoselect
 set backspace=indent,eol,start
 
 "----------------------------------------------------------------------------
