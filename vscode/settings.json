@@ -23,7 +23,7 @@
     "vim.vimrc.enable": true,
     "vim.vimrc.path": "~/.vimrc",
     "editor.renderWhitespace": "trailing",
-    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.ignoreTrimWhitespace": true,
     "vim.autoSwitchInputMethod.enable": true,
     // "vim.autoSwitchInputMethod.defaultIM": "com.apple.inputmethod.Kotoeri.RomajiTyping.Roman",
     // "vim.autoSwitchInputMethod.obtainIMCmd": "/opt/homebrew/bin/im-select",

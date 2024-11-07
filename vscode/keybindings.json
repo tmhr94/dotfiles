@@ -276,11 +276,11 @@
     "when": "breadcrumbsActive"
   },
   {
-    "key": "cmd+t",
+    "key": "ctrl+j",
     "command": "workbench.action.showAllSymbols"
   },
   {
-    "key": "cmd+t",
+    "key": "ctrl+j",
     "command": "-workbench.action.showAllSymbols"
   },
   {
