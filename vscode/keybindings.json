@@ -171,7 +171,7 @@
     "when": "suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
   },
   {
-    "key": "ctrl+y",
+    "key": "ctrl+j",
     "command": "workbench.action.gotoSymbol",
     "when": "!accessibilityHelpIsShown && !accessibleViewIsShown"
   },
@@ -276,7 +276,7 @@
     "when": "breadcrumbsActive"
   },
   {
-    "key": "ctrl+j",
+    "key": "cmd+;",
     "command": "workbench.action.showAllSymbols"
   },
   {
