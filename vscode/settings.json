@@ -146,4 +146,6 @@
     "vim.incsearch": false,
     "vim.mouseSelectionGoesIntoVisualMode": false,
     "vim.wrapscan": false,
+    "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/bin/im-select",
+    "vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/bin/im-select {im}",
 }

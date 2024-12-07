@@ -153,7 +153,7 @@
     "when": "breadcrumbsActive && breadcrumbsVisible"
   },
   {
-    "key": "ctrl+o",
+    "key": "ctrl+;",
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
@@ -296,5 +296,13 @@
     "key": "shift+cmd+y",
     "command": "-workbench.debug.action.toggleRepl",
     "when": "workbench.panel.repl.view.active"
+  },
+  {
+    "key": "ctrl+'",
+    "command": "workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "alt+cmd+b",
+    "command": "-workbench.action.toggleAuxiliaryBar"
   }
 ]
