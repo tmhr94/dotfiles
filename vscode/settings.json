@@ -148,4 +148,7 @@
     "vim.wrapscan": false,
     "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/bin/im-select",
     "vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/bin/im-select {im}",
+    "markdown-checkbox.dateWhenChecked": false,
+    "markdown-checkbox.italicWhenChecked": false,
+    "markdown-checkbox.strikeThroughWhenChecked": false,
 }
