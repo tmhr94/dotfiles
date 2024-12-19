@@ -151,4 +151,9 @@
     "markdown-checkbox.dateWhenChecked": false,
     "markdown-checkbox.italicWhenChecked": false,
     "markdown-checkbox.strikeThroughWhenChecked": false,
+    "application.shellEnvironmentResolutionTimeout": 30,
+    "[vue]": {
+        "editor.defaultFormatter": "Vue.volar"
+    },
+    "insertnum.start": 1,
 }
