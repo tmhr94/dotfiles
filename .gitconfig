@@ -3,3 +3,27 @@
 	email = 14220000+tmhr94@users.noreply.github.com
 [url "git@github.com:"]
 	insteadOf = https://github.com/
+[column]
+  ui = auto
+[branch]
+  sort = -committerdate
+[tag]
+  sort = version:refname
+[init]
+	defaultBranch = main
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	renames = true
+[push]
+	default = simple
+	autoSetupRemote = true
+	followTags = true
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+[merge]
+	conflictstyle = zdiff3
+[commit]
+	verbose = true

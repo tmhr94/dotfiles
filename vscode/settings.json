@@ -156,4 +156,11 @@
         "editor.defaultFormatter": "Vue.volar"
     },
     "insertnum.start": 1,
+    "workbench.colorCustomizations": {},
+    "editor.accessibilitySupport": "off",
+    "accessibility.signals.chatResponseReceived": {
+        "sound": "off"
+    },
+    "chat.editing.alwaysSaveWithGeneratedChanges": true,
+    "cline.mcp.mode": "off",
 }

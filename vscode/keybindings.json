@@ -294,5 +294,23 @@
   {
     "key": "alt+cmd+b",
     "command": "-workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "alt+cmd+i",
+    "command": "inlineChat.startWithCurrentLine",
+    "when": "editorFocus && github.copilot.chat.editor.enableLineTrigger && inlineChatHasProvider && !editorReadonly && !inlineChatVisible"
+  },
+  {
+    "key": "cmd+i",
+    "command": "-inlineChat.startWithCurrentLine",
+    "when": "editorFocus && github.copilot.chat.editor.enableLineTrigger && inlineChatHasProvider && !editorReadonly && !inlineChatVisible"
+  },
+  {
+    "key": "ctrl+cmd+c",
+    "command": "claude-dev.SidebarProvider.focus"
+  },
+  {
+    "key": "ctrl+cmd+n",
+    "command": "cline.popoutButtonClicked"
   }
 ]
