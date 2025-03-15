@@ -312,5 +312,15 @@
   {
     "key": "ctrl+cmd+n",
     "command": "cline.popoutButtonClicked"
+  },
+  {
+    "key": "ctrl+;",
+    "command": "aipopup.action.modal.generate",
+    "when": "editorFocus && !composerBarIsVisible"
+  },
+  {
+    "key": "shift+cmd+k",
+    "command": "-aipopup.action.modal.generate",
+    "when": "editorFocus && !composerBarIsVisible"
   }
 ]

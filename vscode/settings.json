@@ -29,7 +29,6 @@
     // "vim.autoSwitchInputMethod.obtainIMCmd": "/opt/homebrew/bin/im-select",
     // "vim.autoSwitchInputMethod.switchIMCmd": "/opt/homebrew/bin/im-select {im}",
     "vim.foldfix": true,
-    "search.mode": "reuseEditor",
     "search.exclude": {
         "public/assets/*": true,
         "public/assets/**/*": true,
