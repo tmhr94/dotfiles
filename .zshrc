@@ -110,6 +110,7 @@ alias gs='git stash'
 alias gsm='git stash push -m'
 alias gri='git rebase -i'
 alias grc='git rebase --continue'
+### need to install ghq and peco: brew install ghq peco
 alias repo='cd $(ghq list --full-path --exact| peco)'
 
 ## docker
