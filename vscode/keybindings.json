@@ -326,5 +326,25 @@
   {
     "key": "cmd+i",
     "command": "composerMode.agent"
-  }
+  },
+  {
+    "key": "cmd+i",
+    "command": "composerMode.agent"
+},
+{
+    "key": "shift+enter",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+        "text": "\\\r\n"
+    },
+    "when": "terminalFocus"
+},
+{
+  "key": "ctrl+o",
+  "command": "workbench.action.quickOpen"
+},
+{
+  "key": "cmd+p",
+  "command": "-workbench.action.quickOpen"
+}
 ]
