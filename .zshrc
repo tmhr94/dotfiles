@@ -20,6 +20,7 @@ function __display_git_ps1() {
   fi
 }
 setopt nocorrect
+setopt no_correct
 
 # -----------------------------
 # variables
@@ -57,8 +58,10 @@ eval "$(nodenv init -)"
 # options
 setopt auto_cd
 setopt mark_dirs
-setopt correct
-setopt correct_all
+# setopt correct
+# setopt correct_all
+unsetopt correct_all
+unsetopt correct
 setopt no_beep
 setopt nolistbeep
 setopt PROMPT_SUBST
