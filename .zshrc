@@ -19,6 +19,7 @@ function __display_git_ps1() {
     __git_ps1 " %s"
   fi
 }
+setopt nocorrect
 
 # -----------------------------
 # variables

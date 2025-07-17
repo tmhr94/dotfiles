@@ -346,5 +346,9 @@
 {
   "key": "cmd+p",
   "command": "-workbench.action.quickOpen"
+},
+{
+  "key": "cmd+p",
+  "command": "workbench.action.quickOpen"
 }
 ]
