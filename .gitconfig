@@ -2,7 +2,8 @@
 	name = tmhr94
 	email = 14220000+tmhr94@users.noreply.github.com
 [core]
-  excludesfile = ~/.gitignore_global
+	excludesfile = ~/.gitignore_global
+	ignorecase = false
 [url "git@github.com:"]
 	insteadOf = https://github.com/
 [filter "lfs"]
@@ -40,7 +41,7 @@
 	verbose = true
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
