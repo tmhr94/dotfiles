@@ -164,4 +164,5 @@
     "chat.editing.alwaysSaveWithGeneratedChanges": true,
     "cline.mcp.mode": "off",
     "mssql.enableRichExperiencesDoNotShowPrompt": true,
+    "editor.editContext": false // fix something went wrong with the japanese text
 }

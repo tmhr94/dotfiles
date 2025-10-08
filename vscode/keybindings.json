@@ -350,9 +350,5 @@
   {
     "key": "cmd+p",
     "command": "workbench.action.quickOpen"
-  },
-  {
-    "key": "cmd+e",
-    "command": "composerMode.background"
   }
 ]
