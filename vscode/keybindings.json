@@ -350,5 +350,24 @@
   {
     "key": "cmd+p",
     "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+cmd+i",
+    "command": "-workbench.panel.chat",
+    "when": "workbench.panel.chat.view.copilot.active"
+  },
+  {
+    "key": "ctrl+cmd+i",
+    "command": "chatgpt.sidebarView.focus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "chatgpt.newChat",
+    "when": "chatgpt.supportsNewChatKeyShortcut"
+  },
+  {
+    "key": "cmd+n",
+    "command": "-chatgpt.newChat",
+    "when": "chatgpt.supportsNewChatKeyShortcut"
   }
 ]
