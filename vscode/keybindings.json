@@ -367,10 +367,5 @@
   {
     "key": "ctrl+i",
     "command": "outline.focus"
-  },
-  {
-    "key": "ctrl+i",
-    "command": "workbench.action.closePanel",
-    "when": "panelFocus"
   }
 ]
