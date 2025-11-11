@@ -103,16 +103,6 @@
     "command": "editor.action.goToImplementation"
   },
   {
-    "key": "ctrl+i",
-    "command": "breadcrumbs.focusAndSelect",
-    "when": "breadcrumbsPossible && breadcrumbsVisible"
-  },
-  {
-    "key": "shift+cmd+.",
-    "command": "-breadcrumbs.focusAndSelect",
-    "when": "breadcrumbsPossible && breadcrumbsVisible"
-  },
-  {
     "key": "ctrl+h",
     "command": "breadcrumbs.focusPreviousWithPicker",
     "when": "breadcrumbsActive && breadcrumbsVisible && listFocus && !inputFocus"
@@ -373,5 +363,14 @@
   {
     "key": "ctrl+cmd+i",
     "command": "chatgpt.newCodexPanel"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "outline.focus"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "workbench.action.closePanel",
+    "when": "panelFocus"
   }
 ]
