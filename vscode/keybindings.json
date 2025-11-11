@@ -357,10 +357,6 @@
     "when": "workbench.panel.chat.view.copilot.active"
   },
   {
-    "key": "ctrl+cmd+i",
-    "command": "chatgpt.sidebarView.focus"
-  },
-  {
     "key": "ctrl+n",
     "command": "chatgpt.newChat",
     "when": "chatgpt.supportsNewChatKeyShortcut"
@@ -369,5 +365,13 @@
     "key": "cmd+n",
     "command": "-chatgpt.newChat",
     "when": "chatgpt.supportsNewChatKeyShortcut"
+  },
+  {
+    "key": "ctrl+cmd+o",
+    "command": "chatgpt.addToThread"
+  },
+  {
+    "key": "ctrl+cmd+i",
+    "command": "chatgpt.newCodexPanel"
   }
 ]
