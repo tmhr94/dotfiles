@@ -265,7 +265,8 @@
   },
   {
     "key": "ctrl+cmd+[",
-    "command": "workbench.files.action.collapseExplorerFolders"
+    "command": "workbench.files.action.collapseExplorerFolders",
+    "when": "filesExplorerFocus"
   },
   {
     "key": "cmd+y",
@@ -357,15 +358,20 @@
     "when": "chatgpt.supportsNewChatKeyShortcut"
   },
   {
-    "key": "ctrl+cmd+o",
+    "key": "ctrl+k",
     "command": "chatgpt.addToThread"
   },
   {
-    "key": "ctrl+cmd+i",
+    "key": "ctrl+i",
     "command": "chatgpt.newCodexPanel"
   },
   {
-    "key": "ctrl+i",
+    "key": "ctrl+cmd+i",
     "command": "outline.focus"
+  },
+  {
+    "key": "ctrl+cmd+[",
+    "command": "outline.collapse",
+    "when": "outlineFocused"
   }
 ]
