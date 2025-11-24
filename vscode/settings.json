@@ -165,5 +165,16 @@
     "cline.mcp.mode": "off",
     "mssql.enableRichExperiencesDoNotShowPrompt": true,
     "editor.editContext": false,
-    "github.copilot.nextEditSuggestions.enabled": true // fix something went wrong with the japanese text
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "makefile.configureOnOpen": false,
+    "chat.instructionsFilesLocations": {
+        ".github/instructions": true,
+        "/Users/chiyuu/.aitk/instructions/": true
+    },
+    "mssql.connectionGroups": [
+        {
+            "name": "ROOT",
+            "id": "FC6A733C-ECE0-4423-BE03-6D367FACACD3"
+        }
+    ] // fix something went wrong with the japanese text
 }

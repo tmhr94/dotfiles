@@ -128,3 +128,6 @@ alias s='bundle exec rspec'
 export PATH="/opt/homebrew/opt/mysql@8.0/bin:$PATH"
 export PATH="/opt/homebrew/opt/mysql@8.4/bin:$PATH"
 export PATH="$HOME/.dotnet/tools:$PATH"
+
+# Added by Antigravity
+export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
