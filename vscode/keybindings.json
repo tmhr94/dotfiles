@@ -362,10 +362,6 @@
     "command": "chatgpt.addToThread"
   },
   {
-    "key": "ctrl+i",
-    "command": "chatgpt.newCodexPanel"
-  },
-  {
     "key": "ctrl+cmd+i",
     "command": "outline.focus"
   },
@@ -373,5 +369,9 @@
     "key": "ctrl+cmd+[",
     "command": "outline.collapse",
     "when": "outlineFocused"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "chatgpt.sidebarView.focus"
   }
 ]
