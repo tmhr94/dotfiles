@@ -340,20 +340,6 @@
     "when": "workbench.panel.chat.view.copilot.active"
   },
   {
-    "key": "ctrl+n",
-    "command": "chatgpt.newChat",
-    "when": "chatgpt.supportsNewChatKeyShortcut"
-  },
-  {
-    "key": "cmd+n",
-    "command": "-chatgpt.newChat",
-    "when": "chatgpt.supportsNewChatKeyShortcut"
-  },
-  {
-    "key": "ctrl+k",
-    "command": "chatgpt.addToThread"
-  },
-  {
     "key": "ctrl+cmd+i",
     "command": "outline.focus"
   },
@@ -361,10 +347,6 @@
     "key": "ctrl+cmd+[",
     "command": "outline.collapse",
     "when": "outlineFocused"
-  },
-  {
-    "key": "ctrl+i",
-    "command": "chatgpt.sidebarView.focus"
   },
   {
     "key": "cmd+i",
@@ -375,5 +357,34 @@
     "key": "shift+cmd+i",
     "command": "-workbench.action.chat.openagent",
     "when": "config.chat.agent.enabled && !chatSetupDisabled && !chatSetupHidden"
+  },
+  {
+    "key": "cmd+n",
+    "command": "-chatgpt.newChat",
+    "when": "chatgpt.supportsNewChatKeyShortcut"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "claude-vscode.sidebar.open"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "claude-vscode.newConversation",
+    "when": "activeWebviewPanelId == 'claudeVSCodePanel' || claude-vscode.sideBarActive && !editorFocus && !panelFocus"
+  },
+  {
+    "key": "cmd+n",
+    "command": "-claude-vscode.newConversation",
+    "when": "activeWebviewPanelId == 'claudeVSCodePanel' || claude-vscode.sideBarActive && !editorFocus && !panelFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "claude-vscode.insertAtMention",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+k",
+    "command": "-claude-vscode.insertAtMention",
+    "when": "editorTextFocus"
   }
 ]
