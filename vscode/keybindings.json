@@ -364,10 +364,6 @@
     "when": "chatgpt.supportsNewChatKeyShortcut"
   },
   {
-    "key": "ctrl+i",
-    "command": "claude-vscode.sidebar.open"
-  },
-  {
     "key": "ctrl+n",
     "command": "claude-vscode.newConversation",
     "when": "activeWebviewPanelId == 'claudeVSCodePanel' || claude-vscode.sideBarActive && !editorFocus && !panelFocus"
@@ -386,5 +382,15 @@
     "key": "alt+k",
     "command": "-claude-vscode.insertAtMention",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "claude-vscode.editor.open",
+    "when": "!config.claudeCode.useTerminal"
+  },
+  {
+    "key": "shift+cmd+escape",
+    "command": "-claude-vscode.editor.open",
+    "when": "!config.claudeCode.useTerminal"
   }
 ]
