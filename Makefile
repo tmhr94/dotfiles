@@ -1,15 +1,20 @@
 CURRENT_DIR := $(shell pwd)
 VSCODE_SETTING_DIR := ~/Library/Application\ Support/Code/User/
+CLAUDE_DIR := $(HOME)/.claude
 HOME_DIR := $(HOME)
 
 FILES_TO_LINK := .vimrc .zshrc .gitconfig .gitignore_global .zsh/.git-prompt.sh .codex/config.toml .claude.json
 VSCODE_FILES := settings.json keybindings.json
+CLAUDE_FILES := settings.json statusline.sh CLAUDE.md agents/app-test-debug-agent.md agents/tech-docs-searcher.md
 
 .PHONY: link unlink commit
 
 # Commands
-link: link_home_files link_claude_dir link_vscode_files
-unlink: unlink_home_files unlink_claude_dir unlink_vscode_files
+link:
+	@$(MAKE) link_home_files || true
+	@$(MAKE) link_claude_files
+	@$(MAKE) link_vscode_files || true
+unlink: unlink_home_files unlink_claude_files unlink_vscode_files
 commit:
 	git add .
 	git commit -m 'updated'
@@ -20,9 +25,10 @@ link_home_files:
 	@echo "Linking files to home directory..."
 	@$(foreach file,$(FILES_TO_LINK),ln -s $(CURRENT_DIR)/$(file) $(HOME_DIR)/$(file);)
 
-link_claude_dir:
-	@echo "Linking .claude directory to home directory..."
-	@ln -s $(CURRENT_DIR)/.claude $(HOME_DIR)/.claude
+link_claude_files:
+	@echo "Linking .claude files to home directory..."
+	@mkdir -p $(CLAUDE_DIR)/agents
+	@$(foreach file,$(CLAUDE_FILES),mkdir -p "$(dir $(CLAUDE_DIR)/$(file))"; ln -sfn "$(CURRENT_DIR)/.claude/$(file)" "$(CLAUDE_DIR)/$(file)";)
 
 link_vscode_files:
 	@echo "Linking VSCode files..."
@@ -32,9 +38,9 @@ unlink_home_files:
 	@echo "Unlinking files from home directory..."
 	@$(foreach file,$(FILES_TO_LINK),unlink $(HOME_DIR)/$(file);)
 
-unlink_claude_dir:
-	@echo "Unlinking .claude directory from home directory..."
-	@unlink $(HOME_DIR)/.claude || true
+unlink_claude_files:
+	@echo "Unlinking .claude files from home directory..."
+	@$(foreach file,$(CLAUDE_FILES),unlink $(CLAUDE_DIR)/$(file);)
 
 unlink_vscode_files:
 	@echo "Unlinking VSCode files..."
