@@ -1,3 +1,4 @@
 !vscode/settings.json
 !vscode/keybindings.json
 .env
+.claude.json

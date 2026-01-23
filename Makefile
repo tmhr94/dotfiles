@@ -3,7 +3,7 @@ VSCODE_SETTING_DIR := ~/Library/Application\ Support/Code/User/
 CLAUDE_DIR := $(HOME)/.claude
 HOME_DIR := $(HOME)
 
-FILES_TO_LINK := .vimrc .zshrc .gitconfig .gitignore_global .zsh/.git-prompt.sh .codex/config.toml .claude.json
+FILES_TO_LINK := .vimrc .zshrc .gitconfig .gitignore_global .zsh/.git-prompt.sh .codex/config.toml
 VSCODE_FILES := settings.json keybindings.json
 CLAUDE_FILES := settings.json statusline.sh CLAUDE.md agents/app-test-debug-agent.md agents/tech-docs-searcher.md
 
