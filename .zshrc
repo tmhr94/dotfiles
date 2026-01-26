@@ -132,3 +132,7 @@ export PATH="$HOME/.dotnet/tools:$PATH"
 
 # Added by Antigravity
 export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
+
+# Claude
+## serena
+. "$HOME/.local/bin/env"
