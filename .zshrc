@@ -136,3 +136,12 @@ export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
 # Claude
 ## serena
 . "$HOME/.local/bin/env"
+
+# bun completions
+[ -s "/Users/chiyuu/.bun/_bun" ] && source "/Users/chiyuu/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+alias claude-mem='/Users/chiyuu/.bun/bin/bun "/Users/chiyuu/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs"'

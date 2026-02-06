@@ -1,4 +1,8 @@
 model_reasoning_effort = "high"
+personality = "pragmatic"
+model = "gpt-5.2-codex"
 
 [features]
 web_search_request = true
+
+[mcp_servers]

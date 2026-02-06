@@ -1,7 +1,20 @@
 {
-  "statusLine": {
-    "type": "command",
-    "command": "~/.claude/statusline.sh"
+  "permissions": {
+    "allow": [
+      "WebFetch",
+      "WebSearch",
+      "mcp__context7__*",
+      "mcp__strands__*",
+      "mcp__github__get_*",
+      "mcp__github__list_*",
+      "mcp__github__search_*",
+      "mcp__chrome-devtools__list_*",
+      "mcp__chrome-devtools__take_snapshot",
+      "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_console_messages",
+      "Bash(flutter analyze:*)",
+      "Bash(go tool golangci-lint run:*)"
+    ]
   },
   "hooks": {
     "Stop": [
@@ -15,19 +28,8 @@
       }
     ]
   },
-  "permissions": {
-    "allow": [
-      "WebFetch",
-      "WebSearch",
-      "mcp__context7__*",
-      "mcp__strands__*",
-      "mcp__github__get_*",
-      "mcp__github__list_*",
-      "mcp__github__search_*",
-      "mcp__chrome-devtools__list_*",
-      "mcp__chrome-devtools__take_snapshot",
-      "mcp__playwright__browser_snapshot",
-      "mcp__playwright__browser_console_messages"
-    ]
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline.sh"
   }
 }
