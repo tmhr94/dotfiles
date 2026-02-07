@@ -168,8 +168,7 @@
     "github.copilot.nextEditSuggestions.enabled": true,
     "makefile.configureOnOpen": false,
     "chat.instructionsFilesLocations": {
-        ".github/instructions": true,
-        "/Users/chiyuu/.aitk/instructions/": true
+        ".github/instructions": true
     },
     "mssql.connectionGroups": [
         {

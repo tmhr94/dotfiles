@@ -6,3 +6,6 @@ model = "gpt-5.2-codex"
 web_search_request = true
 
 [mcp_servers]
+
+[projects."/Users/chiyuu/Documents/git/PraLoop"]
+trust_level = "trusted"
