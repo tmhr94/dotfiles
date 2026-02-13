@@ -176,5 +176,6 @@
             "id": "FC6A733C-ECE0-4423-BE03-6D367FACACD3"
         }
     ],
-    "claudeCode.preferredLocation": "panel" // fix something went wrong with the japanese text
+    "claudeCode.preferredLocation": "panel",
+    "http.systemCertificatesNode": true // fix something went wrong with the japanese text
 }
