@@ -1,11 +1,17 @@
 {
+  "env": {
+    "ENABLE_TOOL_SEARCH": "true",
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
   "permissions": {
     "allow": [
       "WebFetch",
       "WebSearch",
       "mcp__context7__*",
       "Bash(flutter analyze:*)",
-      "Bash(go tool golangci-lint run:*)"
+      "Bash(go tool golangci-lint run:*)",
+      "Bash(git add:*)",
+      "Bash(go test:*)"
     ]
   },
   "hooks": {
@@ -27,5 +33,8 @@
   "env": {
     // "ENABLE_TOOL_SEARCH": "true",
     // "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
+  "enabledPlugins": {
+    "gopls-lsp@claude-plugins-official": true
   }
 }

@@ -1,6 +1,8 @@
-model_reasoning_effort = "high"
+model_reasoning_effort = "xhigh"
 personality = "pragmatic"
-model = "gpt-5.2-codex"
+model = "gpt-5.3-codex"
+
+notify = ["bash", "-lc", "afplay /System/Library/Sounds/Ping.aiff"]
 
 [features]
 web_search_request = true

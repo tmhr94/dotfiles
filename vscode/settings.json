@@ -177,5 +177,6 @@
         }
     ],
     "claudeCode.preferredLocation": "panel",
-    "http.systemCertificatesNode": true // fix something went wrong with the japanese text
+    "http.systemCertificatesNode": true, // fix something went wrong with the japanese text
+    "git.openRepositoryInParentFolders": "always"
 }
