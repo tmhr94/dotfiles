@@ -80,7 +80,7 @@ HISTTIMEFORMAT="%y/%m/%d %T"
 # -----------------------------
 # aliases
 alias ll='ls -lah'
-alias rm='rm -i'
+# alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 alias mkdir='mkdir -p'
@@ -134,17 +134,15 @@ export PATH="$HOME/.dotnet/tools:$PATH"
 export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
 
 # Claude
-## serena
-. "$HOME/.local/bin/env"
 
 # bun completions
-[ -s "/Users/chiyuu/.bun/_bun" ] && source "/Users/chiyuu/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-alias claude-mem='/Users/chiyuu/.bun/bin/bun "/Users/chiyuu/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs"'
+alias claude-mem="$HOME/.bun/bin/bun $HOME/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs"
 
 # ------------
 
@@ -163,3 +161,9 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 alias claude-mem="$HOME/.bun/bin/bun $HOME/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs"
+
+# disable rm
+rm() {
+  echo "rm is disabled. Please use trash instead." >&2
+  return 1
+}
