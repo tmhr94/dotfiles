@@ -167,3 +167,6 @@ rm() {
   echo "rm is disabled. Please use trash instead." >&2
   return 1
 }
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/terraform terraform

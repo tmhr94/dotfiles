@@ -1,6 +1,6 @@
 model_reasoning_effort = "xhigh"
 personality = "pragmatic"
-model = "gpt-5.3-codex"
+model = "gpt-5.4"
 
 notify = ["bash", "-lc", "afplay /System/Library/Sounds/Ping.aiff"]
 
