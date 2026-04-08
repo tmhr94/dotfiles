@@ -125,7 +125,7 @@ alias dcs='docker-compose stop'
 alias dcu='docker-compose up'
 
 ## ruby
-alias s='bundle exec rspec'
+alias s='docker compose exec -e RAILS_ENV=test runner bundle exec rspec'
 export PATH="/opt/homebrew/opt/mysql@8.0/bin:$PATH"
 export PATH="/opt/homebrew/opt/mysql@8.4/bin:$PATH"
 export PATH="$HOME/.dotnet/tools:$PATH"
