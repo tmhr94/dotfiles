@@ -28,7 +28,7 @@ link_home_files:
 
 link_claude_files:
 	@echo "Linking .claude files to home directory..."
-	@mkdir -p $(CLAUDE_DIR)/agents
+	@mkdir -p "$(CLAUDE_DIR)/agents"
 	@$(foreach file,$(CLAUDE_FILES),mkdir -p "$(dir $(CLAUDE_DIR)/$(file))"; ln -sfn "$(CURRENT_DIR)/.claude/$(file)" "$(CLAUDE_DIR)/$(file)";)
 
 link_vscode_files:
@@ -38,12 +38,12 @@ link_vscode_files:
 
 unlink_home_files:
 	@echo "Unlinking files from home directory..."
-	@$(foreach file,$(FILES_TO_LINK),unlink $(HOME_DIR)/$(file);)
+	@$(foreach file,$(FILES_TO_LINK),unlink "$(HOME_DIR)/$(file)";)
 
 unlink_claude_files:
 	@echo "Unlinking .claude files from home directory..."
-	@$(foreach file,$(CLAUDE_FILES),unlink $(CLAUDE_DIR)/$(file);)
+	@$(foreach file,$(CLAUDE_FILES),unlink "$(CLAUDE_DIR)/$(file)";)
 
 unlink_vscode_files:
 	@echo "Unlinking VSCode files..."
-	@$(foreach file,$(VSCODE_FILES),unlink $(VSCODE_SETTING_DIR)/$(file);)
+	@$(foreach file,$(VSCODE_FILES),unlink "$(VSCODE_SETTING_DIR)/$(file)";)
