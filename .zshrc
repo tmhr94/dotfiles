@@ -1,5 +1,8 @@
 # .zshrc
 
+# ignore EOF
+setopt ignore_eof
+
 # -----------------------------
 # general settings
 ## key bindings
