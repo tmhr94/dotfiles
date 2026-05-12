@@ -1,6 +1,6 @@
-model_reasoning_effort = "xhigh"
+model_reasoning_effort = "high"
 personality = "pragmatic"
-model = "gpt-5.4"
+model = "gpt-5.5"
 
 notify = ["bash", "-lc", "afplay /System/Library/Sounds/Ping.aiff"]
 
@@ -9,5 +9,11 @@ web_search_request = true
 
 [mcp_servers]
 
+[mcp_servers.sentry]
+url = "https://mcp.sentry.dev/mcp"
+
 [projects."/Users/chiyuu/Documents/git/PraLoop"]
 trust_level = "trusted"
+
+[tui.model_availability_nux]
+"gpt-5.5" = 3
