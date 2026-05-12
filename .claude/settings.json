@@ -7,9 +7,11 @@
       "Bash(flutter analyze:*)",
       "Bash(go tool golangci-lint run:*)",
       "Bash(git add:*)",
-      "Bash(go test:*)"
+      "Bash(go test:*)",
+      "mcp__pencil"
     ]
   },
+  "model": "opus",
   "hooks": {
     "Stop": [
       {
@@ -28,6 +30,23 @@
   },
   "enabledPlugins": {
     "gopls-lsp@claude-plugins-official": true,
-    "ruby-lsp@claude-plugins-official": true
-  }
+    "ruby-lsp@claude-plugins-official": true,
+    "genshijin@genshijin": true,
+    "codex@openai-codex": true
+  },
+  "extraKnownMarketplaces": {
+    "genshijin": {
+      "source": {
+        "source": "github",
+        "repo": "InterfaceX-co-jp/genshijin"
+      }
+    },
+    "openai-codex": {
+      "source": {
+        "source": "github",
+        "repo": "openai/codex-plugin-cc"
+      }
+    }
+  },
+  "effortLevel": "xhigh"
 }
