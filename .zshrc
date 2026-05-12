@@ -144,6 +144,8 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 alias claude-mem="$HOME/.bun/bin/bun $HOME/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs"
 
+#export CLAUDE_CODE_NO_FLICKER=1
+
 # ------------
 
 # The next line updates PATH for the Google Cloud SDK.

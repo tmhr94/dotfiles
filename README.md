@@ -2,6 +2,8 @@
 
 ```bash
 # Create symlinks
+$ make install
+# or
 $ make link
 # Remove symlinks
 $ make unlink

@@ -392,5 +392,9 @@
     "key": "shift+cmd+escape",
     "command": "-claude-vscode.editor.open",
     "when": "!config.claudeCode.useTerminal"
+  },
+  {
+    "key": "shift+cmd+i",
+    "command": "chatgpt.addToThread"
   }
 ]
