@@ -318,7 +318,15 @@
       "key": "shift+enter",
       "command": "workbench.action.terminal.sendSequence",
       "args": {
-          "text": "\\\r\n"
+          "text": "\u001b[13;2u"
+      },
+      "when": "terminalFocus"
+  },
+  {
+      "key": "alt+enter",
+      "command": "workbench.action.terminal.sendSequence",
+      "args": {
+          "text": "\u001b[13;3u"
       },
       "when": "terminalFocus"
   },

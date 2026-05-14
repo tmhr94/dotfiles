@@ -59,6 +59,6 @@ if [ "$focus_pane" != "$main_pane" ]; then
   tmux swap-pane -d -s "$focus_pane" -t "$main_pane"
 fi
 
-tmux set-option -wq -t "$window_id" main-pane-width 85%
+tmux set-option -wq -t "$window_id" main-pane-width 67%
 tmux select-layout -t "$window_id" main-vertical
 tmux select-pane -t "$focus_pane"
