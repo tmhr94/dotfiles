@@ -71,7 +71,7 @@
     "github.copilot.enable": {
         "*": true,
         "plaintext": false,
-        "markdown": true,
+        "markdown": false,
         "scminput": false
     },
     "window.zoomLevel": 2,
@@ -178,5 +178,6 @@
     ],
     "claudeCode.preferredLocation": "panel",
     "http.systemCertificatesNode": true, // fix something went wrong with the japanese text
-    "git.openRepositoryInParentFolders": "always"
+    "git.openRepositoryInParentFolders": "always",
+    "explorer.confirmPasteNative": false
 }
