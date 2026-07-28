@@ -86,7 +86,7 @@
     "editor.inlineSuggest.suppressSuggestions": true,
     "rubyLsp.formatter": "rubocop",
     "editor.formatOnSaveMode": "modificationsIfAvailable",
-    "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
+    "workbench.colorTheme": "GitHub Dark",
     "vim.autoindent": false,
     "github.copilot.chat.localeOverride": "ja",
     "editor.suggestOnTriggerCharacters": false,
@@ -182,5 +182,6 @@
     "explorer.confirmPasteNative": false,
     "docker.extension.enableComposeLanguageServer": false,
     "go.toolsManagement.autoUpdate": true,
-    "dart.openDevTools": "flutter"
+    "dart.openDevTools": "flutter",
+    "dart.flutterSdkPath": "/Users/tmhr94/Documents/dev/flutter"
 }

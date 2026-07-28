@@ -92,11 +92,18 @@ alias vi='vim'
 alias grep='grep --color'
 alias df='df -h'
 alias rl='exec $SHELL -l'
-# alias vs='code .'
-alias cs='cursor .'
-alias vs='cs'
+alias vs='code .'
+# alias cs='cursor .'
+# alias vs='cs'
 alias dps='docker ps'
 alias cg='cd ~/Documents/git'
+tmux() {
+  if [ "$#" -eq 0 ]; then
+    command tmux new-session -A -s default -c "$HOME"
+  else
+    command tmux "$@"
+  fi
+}
 alias awsl='aws --endpoint-url=http://localhost:4566/'
 alias history='history -i'
 alias dp='(cg && cd dotfiles/scripts && ./bluetooth_device_connection.sh pair && cd - > /dev/null)'
