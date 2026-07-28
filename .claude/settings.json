@@ -32,7 +32,8 @@
     "gopls-lsp@claude-plugins-official": true,
     "ruby-lsp@claude-plugins-official": true,
     "genshijin@genshijin": true,
-    "codex@openai-codex": true
+    "codex@openai-codex": true,
+    "swift-lsp@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
     "genshijin": {
@@ -48,5 +49,6 @@
       }
     }
   },
-  "effortLevel": "xhigh"
+  "effortLevel": "high",
+  "tui": "fullscreen"
 }

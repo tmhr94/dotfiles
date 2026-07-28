@@ -69,7 +69,7 @@
     "vue.autoInsert.dotValue": true,
     "vue.inlayHints.missingProps": true,
     "github.copilot.enable": {
-        "*": true,
+        "*": false,
         "plaintext": false,
         "markdown": false,
         "scminput": false
@@ -179,5 +179,8 @@
     "claudeCode.preferredLocation": "panel",
     "http.systemCertificatesNode": true, // fix something went wrong with the japanese text
     "git.openRepositoryInParentFolders": "always",
-    "explorer.confirmPasteNative": false
+    "explorer.confirmPasteNative": false,
+    "docker.extension.enableComposeLanguageServer": false,
+    "go.toolsManagement.autoUpdate": true,
+    "dart.openDevTools": "flutter"
 }
