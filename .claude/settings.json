@@ -11,7 +11,7 @@
       "mcp__pencil"
     ]
   },
-  "model": "claude-fable-5[1m]",
+  "model": "opus",
   "hooks": {
     "Stop": [
       {
@@ -33,7 +33,8 @@
     "ruby-lsp@claude-plugins-official": true,
     "genshijin@genshijin": true,
     "codex@openai-codex": true,
-    "swift-lsp@claude-plugins-official": true
+    "swift-lsp@claude-plugins-official": true,
+    "sage@sage": true
   },
   "extraKnownMarketplaces": {
     "genshijin": {
@@ -47,8 +48,14 @@
         "source": "github",
         "repo": "openai/codex-plugin-cc"
       }
+    },
+    "sage": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/gendigitalinc/sage.git"
+      }
     }
   },
-  "effortLevel": "high",
+  "effortLevel": "xhigh",
   "tui": "fullscreen"
 }

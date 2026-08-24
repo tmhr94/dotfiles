@@ -35,12 +35,29 @@
         "vendor/": true,
         "vendor/bundle/**/*": true,
         "node_modules/": true,
+        "**/node_modules": true,
+        "**/dist": true,
+        "**/build": true,
+        "**/.next": true,
+        "**/coverage": true
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true,
+        "**/dist": true,
+        "**/build": true
     },
     "solargraph.bundlerPath": "~/.rbenv/shims/bundle",
     "solargraph.diagnostics": true,
     "solargraph.formatting": false,
     "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "editor.codeLens": false,
     "extensions.ignoreRecommendations": true,
+    "git.autorefresh": false,
+    "git.autofetch": false,
+    "git.decorations.enabled": false,
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
@@ -126,7 +143,6 @@
     "terminal.integrated.suggest.quickSuggestions": false,
     "editor.suggest.selectionMode": "never",
     "hediet.vscode-drawio.resizeImages": null,
-    "git.autofetch": true,
     "githubPullRequests.pullBranch": "never",
     "php.debug.executablePath": "",
     "files.watcherExclude": {
@@ -134,6 +150,13 @@
         "**/vendor/*/**": true,
         "**/node_modules/*/**": true,
         "**/tmp/*/**": true,
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/dist/**": true,
+        "**/build/**": true,
+        "**/.vscode/**": true,
+        "**/coverage/**": true,
+        "**/__generated__/**": true
     },
     "files.refactoring.autoSave": false,
     "files.trimTrailingWhitespaceInRegexAndStrings": false,
@@ -183,5 +206,6 @@
     "docker.extension.enableComposeLanguageServer": false,
     "go.toolsManagement.autoUpdate": true,
     "dart.openDevTools": "flutter",
-    "dart.flutterSdkPath": "/Users/tmhr94/Documents/dev/flutter"
+    "dart.flutterSdkPath": "/Users/tmhr94/Documents/dev/flutter",
+    "editor.unicodeHighlight.nonBasicASCII": false
 }
