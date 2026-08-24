@@ -47,6 +47,7 @@ export PATH=$GOPATH/bin:$PATH
 
 ## flutter
 export PATH=$HOME/Documents/dev/flutter/bin:$PATH
+export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 ## rbenv
 [[ -d ~/.rbenv  ]] && \
