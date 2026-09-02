@@ -206,7 +206,7 @@
     "docker.extension.enableComposeLanguageServer": false,
     "go.toolsManagement.autoUpdate": true,
     "dart.openDevTools": "flutter",
-    "dart.flutterSdkPath": "/Users/tmhr94/Documents/dev/flutter",
+    "dart.flutterSdkPath": "~/Documents/dev/flutter",
     "editor.unicodeHighlight.nonBasicASCII": false,
     "workbench.browser.openLocalhostLinks": false
 }

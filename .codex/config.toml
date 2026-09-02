@@ -14,13 +14,10 @@ web_search_request = true
 [mcp_servers.sentry]
 url = "https://mcp.sentry.dev/mcp"
 
-[projects."/Users/chiyuu/Documents/git/PraLoop"]
+[projects."~/Documents/git/PraLoop"]
 trust_level = "trusted"
 
-[projects."/Users/tomohiro-kogawa/Documents/git/ansinsougi-admin-base"]
-trust_level = "trusted"
-
-[projects."/Users/tomohiro-kogawa/Documents/git/dotfiles"]
+[projects."~/Documents/git/dotfiles"]
 trust_level = "trusted"
 
 [tui.model_availability_nux]
