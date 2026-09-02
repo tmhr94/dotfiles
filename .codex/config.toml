@@ -6,6 +6,7 @@ notify = ["bash", "-lc", "afplay /System/Library/Sounds/Ping.aiff"]
 service_tier = "default"
 
 [features]
+hooks = true
 web_search_request = true
 
 [mcp_servers]
