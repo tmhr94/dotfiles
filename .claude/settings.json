@@ -11,7 +11,7 @@
       "mcp__pencil"
     ]
   },
-  "model": "opus",
+  "model": "opus[1m]",
   "hooks": {
     "Stop": [
       {
@@ -34,7 +34,8 @@
     "genshijin@genshijin": true,
     "codex@openai-codex": true,
     "swift-lsp@claude-plugins-official": true,
-    "sage@sage": true
+    "sage@sage": true,
+    "mattpocock-skills@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
     "genshijin": {
@@ -56,6 +57,7 @@
       }
     }
   },
-  "effortLevel": "xhigh",
-  "tui": "fullscreen"
+  "tui": "fullscreen",
+  "effortLevel": "high",
+  "switchModelsOnFlag": true
 }

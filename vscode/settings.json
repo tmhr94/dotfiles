@@ -199,7 +199,7 @@
             "id": "FC6A733C-ECE0-4423-BE03-6D367FACACD3"
         }
     ],
-    "claudeCode.preferredLocation": "panel",
+    "claudeCode.preferredLocation": "sidebar",
     "http.systemCertificatesNode": true, // fix something went wrong with the japanese text
     "git.openRepositoryInParentFolders": "always",
     "explorer.confirmPasteNative": false,
@@ -207,5 +207,6 @@
     "go.toolsManagement.autoUpdate": true,
     "dart.openDevTools": "flutter",
     "dart.flutterSdkPath": "/Users/tmhr94/Documents/dev/flutter",
-    "editor.unicodeHighlight.nonBasicASCII": false
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "workbench.browser.openLocalhostLinks": false
 }

@@ -22,6 +22,15 @@ function __display_git_ps1() {
     __git_ps1 " %s"
   fi
 }
+
+function __set_tmux_pane_title() {
+  if [[ -n "${TMUX:-}" ]]; then
+    print -Pn "\e]2;%~$(__display_git_ps1)\a"
+  fi
+}
+
+autoload -Uz add-zsh-hook
+add-zsh-hook precmd __set_tmux_pane_title
 setopt nocorrect
 setopt no_correct
 

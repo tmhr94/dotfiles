@@ -392,17 +392,21 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+i",
-    "command": "claude-vscode.editor.open",
-    "when": "!config.claudeCode.useTerminal"
-  },
-  {
-    "key": "shift+cmd+escape",
-    "command": "-claude-vscode.editor.open",
-    "when": "!config.claudeCode.useTerminal"
-  },
-  {
     "key": "shift+cmd+i",
     "command": "chatgpt.addToThread"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "claude-vscode.sidebar.open"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "claude-code.insertAtMentioned",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+cmd+k",
+    "command": "-claude-code.insertAtMentioned",
+    "when": "editorTextFocus"
   }
 ]
