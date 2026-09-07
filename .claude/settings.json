@@ -11,7 +11,7 @@
       "mcp__pencil"
     ]
   },
-  "model": "opus[1m]",
+  "model": "opus",
   "hooks": {
     "Stop": [
       {
@@ -57,7 +57,12 @@
       }
     }
   },
-  "tui": "fullscreen",
   "effortLevel": "high",
-  "switchModelsOnFlag": true
+  "tui": "fullscreen",
+  "switchModelsOnFlag": true,
+  "modelSettings": {
+    "claude-opus-5": {
+      "effortLevel": "high"
+    }
+  }
 }

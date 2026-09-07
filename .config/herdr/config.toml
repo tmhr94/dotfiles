@@ -162,7 +162,7 @@ navigate_workspace_down = "j"
 # directory = "~/.herdr/worktrees"
 
 [ui]
-agent_panel_sort = "spaces"
+agent_panel_sort = "priority"
 
 # Sidebar width (auto-scaled based on workspace names, this sets the default)
 # sidebar_width = 26
