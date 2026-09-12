@@ -75,7 +75,8 @@ reload_config = "prefix+r"
 # open_notification_target = "prefix+o"
 # Open the sidebar navigator directly. Keep the tmux-style Ctrl+q binding too.
 workspace_picker = ["ctrl+q", "cmd+ctrl+e"]
-goto = ["prefix+n", "prefix+g"]
+# Keep the tmux-style prefix bindings and add a direct Ctrl+n shortcut.
+goto = ["ctrl+n", "prefix+n", "prefix+g"]
 # new_workspace = "prefix+shift+n"
 # new_worktree = "prefix+shift+g"
 # open_worktree = ""    # optional, unset by default
