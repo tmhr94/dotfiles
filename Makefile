@@ -5,7 +5,7 @@ HOME_DIR := $(HOME)
 
 FILES_TO_LINK := .vimrc .zshrc .gitconfig .gitignore_global .tmux.conf .zsh/.git-prompt.sh .codex/config.toml .codex/hooks.json .config/herdr/config.toml
 VSCODE_FILES := settings.json keybindings.json
-CLAUDE_FILES := settings.json statusline.sh statusline.py CLAUDE.md agents/app-test-debug-agent.md agents/tech-docs-searcher.md
+CLAUDE_FILES := settings.json statusline.sh statusline.py CLAUDE.md agents/app-test-debug-agent.md agents/tech-docs-searcher.md skills/pr-explain
 
 .PHONY: install link unlink commit
 
