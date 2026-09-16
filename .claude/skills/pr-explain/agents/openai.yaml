@@ -1,0 +1,4 @@
+interface:
+  display_name: "PR Explain"
+  short_description: "Explain a PR diff as an illustrated HTML page"
+  default_prompt: "Use $pr-explain to turn a pull request diff into an illustrated explanation page with class roles, relationship diagrams, and processing flow, written to the project root."
