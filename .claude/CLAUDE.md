@@ -8,3 +8,6 @@
 - **Isolation of confidential information**: Please do not access system directories such as `~/.ssh`.
 - **Protection of files outside Git management**: Please do not operate files that are not managed by Git (e.g. OS configuration files).
 - **Prohibition of suspicious downloads**: Please do not execute binary files or executable scripts downloaded from unknown sources.
+
+# questions
+- When asking the user questions (clarifications, decisions, interview/grilling rounds), always use the AskUserQuestion tool instead of writing questions as plain text. Put the recommended option first with "(Recommended)" in its label. If there are more than 4 questions, split them across multiple AskUserQuestion calls.
