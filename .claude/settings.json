@@ -58,11 +58,11 @@
     }
   },
   "effortLevel": "high",
-  "tui": "fullscreen",
-  "switchModelsOnFlag": true,
   "modelSettings": {
     "claude-opus-5": {
       "effortLevel": "high"
     }
-  }
+  },
+  "tui": "fullscreen",
+  "switchModelsOnFlag": true
 }

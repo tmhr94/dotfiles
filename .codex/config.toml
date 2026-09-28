@@ -20,9 +20,12 @@ trust_level = "trusted"
 [projects."~/Documents/git/dotfiles"]
 trust_level = "trusted"
 
+[tui]
+screen_reader_detection_done = true
+
 [tui.model_availability_nux]
 "gpt-5.6-sol" = 4
-gpt-6-astra = 2
+gpt-6-astra = 4
 
 [notice]
 hide_rate_limit_model_nudge = true
