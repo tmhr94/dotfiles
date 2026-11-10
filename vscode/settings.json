@@ -1,7 +1,6 @@
 {
     "editor.tabSize": 2,
     "ruby.codeCompletion": "rcodetools",
-    "files.insertFinalNewline": true,
     "explorer.confirmDragAndDrop": false,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "ruby.intellisense": "rubyLocate",
@@ -39,7 +38,9 @@
         "**/dist": true,
         "**/build": true,
         "**/.next": true,
-        "**/coverage": true
+        "**/coverage": true,
+        "**/.git/**": true,
+        "**/node_modules/**": true
     },
     "files.exclude": {
         "**/.git": true,
@@ -152,11 +153,18 @@
         "**/tmp/*/**": true,
         "**/.git/objects/**": true,
         "**/.git/subtree-cache/**": true,
-        "**/dist/**": true,
-        "**/build/**": true,
         "**/.vscode/**": true,
-        "**/coverage/**": true,
-        "**/__generated__/**": true
+        "**/__generated__/**": true,
+        "**/.git/**": true, // Gitリポジトリ
+        "**/node_modules/**": true, // Node.jsのパッケージ
+        "**/dist/**": true, // ビルド成果物
+        "**/build/**": true, // ビルド成果物
+        "**/coverage/**": true, // カバレッジレポート
+        "**/.aws-sam/**": true, // AWS SAMのビルド成果物
+        "**/.next/**": true, // Next.jsのビルド成果物
+        "**/.pnpm/**": true, // pnpmの仮想ストア
+        "**/pnpm-lock.yaml": true, // pnpmのロックファイル
+        "**/cdk.out/**": true, // AWS CDKのビルド成果物
     },
     "files.refactoring.autoSave": false,
     "files.trimTrailingWhitespaceInRegexAndStrings": false,
@@ -208,5 +216,7 @@
     "dart.openDevTools": "flutter",
     "dart.flutterSdkPath": "~/Documents/dev/flutter",
     "editor.unicodeHighlight.nonBasicASCII": false,
-    "workbench.browser.openLocalhostLinks": false
+    "workbench.browser.openLocalhostLinks": false,
+    "git.mergeEditor": true,
+    "diffEditor.codeLens": true
 }
